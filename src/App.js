@@ -1,13 +1,7 @@
 import "./App.css";
-import Grid from "@mui/joy/Grid";
-import Sheet from "@mui/joy/Sheet";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
-import Switch from "@mui/joy/Switch";
-import Textarea from "@mui/joy/Textarea";
-import Slider from "@mui/joy/Slider";
-import Drawer from "@mui/joy/Drawer";
 import Button from "@mui/joy/Button";
 import Tabs from "@mui/joy/Tabs";
 import TabList from "@mui/joy/TabList";
@@ -20,8 +14,7 @@ import BingoCardCompnent from "./components/BingoCardComponent";
 import CreateGameMenuComponent from "./components/CeateGameMenuComponent";
 import JoinGameMenuComponent from "./components/JoinGameMenuComponent";
 import CallerActionsComponent from "./components/CallerActionsComponent";
-import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
-import { Snackbar } from "@mui/joy";
+import { CssVarsProvider } from "@mui/joy/styles";
 import ToastComponent from "./components/ToastComponent";
 
 function App() {
@@ -39,7 +32,7 @@ function App() {
   const [playerId, setPlayerId] = useState(null);
   const [joinGameId, setJoinGameId] = useState(null);
 
-  const APIurl = process.end.API_URL;
+  const APIurl = process.env.API_URL;
 
   useInterval(async () => {
     if (!game || game.winner) {

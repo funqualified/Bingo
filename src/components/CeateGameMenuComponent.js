@@ -3,7 +3,6 @@ import Switch from "@mui/joy/Switch";
 import Textarea from "@mui/joy/Textarea";
 import Slider from "@mui/joy/Slider";
 import Button from "@mui/joy/Button";
-import Grid from "@mui/joy/Grid";
 import Sheet from "@mui/joy/Sheet";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
