@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.bottomBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  align-items: bottom;
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+}
+
+.ListCard {
+  height: 55vh;
+  overflow-y: scroll;
+  background-color: white;
+}
