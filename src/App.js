@@ -32,7 +32,7 @@ function App() {
   const [playerId, setPlayerId] = useState(null);
   const [joinGameId, setJoinGameId] = useState(null);
 
-  const APIurl = process.env.API_URL;
+  const APIurl = process.env.REACT_APP_API_URL;
 
   useInterval(async () => {
     if (!game || game.winner) {
